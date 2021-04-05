@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Startup</title>
-   <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+<head>
+	<meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+  <title>Guess who?</title>
+</head>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<body class="minimal">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-     <div class="container d-flex align-items-center h-100">
+	
+  <header>
+  	<nav class="navbar  navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="./actress.html" title="">Guess the actress</a></li>
+            <li><a href="./actors.html" title="">Guess the actor</a></li>
+            <li><a href="./about.html" title="">About me</a></li>
+            <li><a href="./contact.html" title="">Contact</a></li>
+            <li><a href="./components.html" title="">Suggestion box</a></li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('https://images.unsplash.com/photo-1617126232947-7c0c02de329b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=4002&q=80')">
+    <div class="container">
       <div class="row">
-        <header class="text-center col-12">
-          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
-        </header>
-        <div class="buffer col-12"></div>
-        <section class="text-center col-12">
-          <hr>
-          <a href="https://mailchi.mp/4d6aeb5ff64e/startup">
-            <button class="btn btn-primary btn-xl">Find out more</button>
-          </a>
-        </section>
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Hello,<br>
+                <span id="typed-strings">
+                  <span>I am confusion</span>
+                  <span>Can you guess</span>
+                  <span>the actress</span>
+                  <span>the actor</span>
+                  <span>?</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  <script>
+  	document.addEventListener("DOMContentLoaded", function (event) {
+     type();
+     movingBackgroundImage();
+  	});
+  </script>
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
+
+<!-- 	<h1>
+		<a href="actors.html">Guess the actor</a>
+	</h1>
+	<h1>
+		<a href="actress.html">Guess the actress</a>
+	</h1> -->
 </html>
